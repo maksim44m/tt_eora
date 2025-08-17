@@ -154,5 +154,7 @@ cython_debug/
 # VSCode
 .vscode/
 
-data
+data/logs/
+data/index.faiss
+data/content.json
 
