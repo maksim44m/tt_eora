@@ -38,7 +38,7 @@ async def question_handler(message: types.Message, llm_client: llm.LLMClient):
         top_p=0.8
     )
     try:
-        await message.answer(answer, parse_mode="Markdown")
+        await message.answer(answer, parse_mode="HTML")
     except Exception:
         await message.answer(answer)
 

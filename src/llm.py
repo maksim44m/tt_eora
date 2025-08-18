@@ -120,7 +120,7 @@ class LLMClient:
             
             for url_dict in urls:
                 for num, link in url_dict.items():
-                    content = content.replace(f"[{num}]", f"[{num}]({link})")
+                    content = content.replace(f"[{num}]", f'<a href="{link}">[{num}]</a>')
             
             return content
         except (json.JSONDecodeError, KeyError):
